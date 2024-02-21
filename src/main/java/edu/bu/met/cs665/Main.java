@@ -9,6 +9,9 @@
 package edu.bu.met.cs665;
 
 import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.example1.RequestManager;
+import edu.bu.met.cs665.example1.Shop;
+import edu.bu.met.cs665.example1.TaxiDriver;
 
 /**
  * This is the Main class.
@@ -22,7 +25,9 @@ public class Main {
    * However, please note that every assignment/final projects requires JUnit tests.
    */
   public static void main(String[] args) {
-    System.out.println("This is a test message from the Main class (Main.java file)");
+    System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
+
+    
   }
 
   /**
