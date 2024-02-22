@@ -10,6 +10,6 @@ public class TruckDriver implements Driver{
         this.name=name;
     }
     public void update(DeliveryRequest dr){
-        System.out.println(this.name+ " Taxi Driver is notified for the delivery of "+ dr.getProductName()+" from "+dr.getShopName()+" "+dr.getSource()+" to "+dr.getDestination());
+        System.out.println(this.name+ " truck driver is notified for the delivery of "+ dr.getProductName()+" from "+dr.getShopName()+" "+dr.getSource()+" to "+dr.getDestination());
     }
 }

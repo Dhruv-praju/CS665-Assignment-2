@@ -11,6 +11,6 @@ public class ScooterDriver implements Driver {
     }
 
     public void update(DeliveryRequest dr){
-        System.out.println(this.name+" Scooter Driver is notified for the delivery of "+ dr.getProductName()+" from "+dr.getShopName()+" "+dr.getSource()+" to "+dr.getDestination());
+        System.out.println(this.name+" scooter driver is notified for the delivery of "+ dr.getProductName()+" from "+dr.getShopName()+" "+dr.getSource()+" to "+dr.getDestination());
     }
 }
