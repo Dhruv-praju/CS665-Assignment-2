@@ -9,9 +9,9 @@
 package edu.bu.met.cs665;
 
 import edu.bu.met.cs665.example1.Person;
-import edu.bu.met.cs665.example1.RequestManager;
-import edu.bu.met.cs665.example1.Shop;
-import edu.bu.met.cs665.example1.TaxiDriver;
+import edu.bu.met.cs665.example1.listeners.drivers.TaxiDriver;
+import edu.bu.met.cs665.example1.publisher.RequestManager;
+import edu.bu.met.cs665.example1.shop.Shop;
 
 /**
  * This is the Main class.
