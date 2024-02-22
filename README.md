@@ -7,23 +7,37 @@
 | Assignment 2 |                            |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+The assignment is software application for delivery notification system. In this a retailer have collaborated with local taxi, scooter drivers for the delivery of the products. This notification system will inform drivers about delivery requests upon recieving product order.
+
+# Assumptions
+The assignment assumes that customer only interacts with the Shop to add, remove and order products.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/Dhruv-praju/CS665-Assignment-2
 
 # Implementation Description 
-
+In the implementation RequestManager is the Publisher and RequestListener is Subcriber. 
+RequestManager maintains a list of subscribers. It sends a request notification to these subscribers.
 
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+    - One can easily add new type of concrete driver clasess by implementing driver interface and the program doesn't require changes in existing publisher classes.
+    - Even new subcriber category could be added as long as it implements RequestListner interface.
+    - Also the subscriber list is dynamic, so driver subscribers can start or stop listening to notifications whenever they need to.
+    - One can also add different retailers like Restuarants, Clothing Stores, Pharmacy stores by creating a class and associating RequestManager object that handles the requests.
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+    - To understand the implementation UML diagrams are provided. Proper documentation of each file with its properties and methods are documented with brief description of its behaviour.
+
 - Describe how you have avoided duplicated code and why it is important.
+    - Inheritance is used to reduce duplicated code and ensure code reusability. In the implementation common characteristics of all drivers types are put in Driver interface to avoid code dulplication.
+
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+    - Observer Design pattern is used. As their is a subscription mechanism to notify multiple delivery partners about an order event in the shop.
 
 
 # Maven Commands
